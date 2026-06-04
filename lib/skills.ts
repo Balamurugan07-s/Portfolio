@@ -2,6 +2,7 @@ import {
   siC,
   siCplusplus,
   siPython,
+  siTypescript,
   siJavascript,
   siHtml5,
   siCss,
@@ -33,6 +34,7 @@ export const SKILLS_GRID: readonly (readonly SkillIcon[])[] = [
     mapTagline(siC, "The mother of all languages."),
     mapTagline(siCplusplus, "Object-oriented powerhouse."),
     mapTagline(siPython, "Reads like English, scales like a rocket."),
+    mapTagline(siTypescript, "JavaScript with superpowers."),
     mapTagline(siJavascript, "The web's native language.")
   ],
   [
