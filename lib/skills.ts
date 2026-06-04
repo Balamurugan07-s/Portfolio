@@ -2,10 +2,9 @@ import {
   siC,
   siCplusplus,
   siPython,
-  siJava,
   siJavascript,
   siHtml5,
-  siCss3,
+  siCss,
   siBootstrap,
   siReact,
   siSpringboot,
@@ -34,12 +33,11 @@ export const SKILLS_GRID: readonly (readonly SkillIcon[])[] = [
     mapTagline(siC, "The mother of all languages."),
     mapTagline(siCplusplus, "Object-oriented powerhouse."),
     mapTagline(siPython, "Reads like English, scales like a rocket."),
-    mapTagline(siJava, "Write once, run anywhere."),
     mapTagline(siJavascript, "The web's native language.")
   ],
   [
     mapTagline(siHtml5, "The bones of any web page."),
-    mapTagline(siCss3, "What separates good from beautiful."),
+    mapTagline(siCss, "What separates good from beautiful."),
     mapTagline(siBootstrap, "Responsive design made easy."),
     mapTagline(siReact, "Components, components, components."),
     mapTagline(siNodedotjs, "JavaScript on the server.")
