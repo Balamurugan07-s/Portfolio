@@ -77,9 +77,16 @@ const education = [
   {
     degree: "Higher Secondary (Class XII)",
     school: "Board of Higher Secondary Education",
+    period: "2023 - 2024",
+    location: "Tamil Nadu",
+    score: "92.5%",
+  },
+  {
+    degree: "SSLC (Class X)",
+    school: "Board of Secondary Education",
     period: "2021 - 2022",
     location: "Tamil Nadu",
-    score: "Completed",
+    score: "91.6%",
   }
 ];
 
