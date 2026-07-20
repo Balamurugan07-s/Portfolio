@@ -329,7 +329,7 @@ export default function Home() {
                   style={{ ["--d" as string]: "700ms" }}
                 >
                   <a
-                    href="/Balamurugan_Resume.pdf"
+                    href="https://drive.google.com/file/d/1VJbW2mInUfuHSmR4dZGQu7_DCJQrW_p-/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-cursor="hover"
