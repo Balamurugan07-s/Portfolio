@@ -20,22 +20,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Balamurugan S — Software Engineer",
+  title: "Balamurugan S — DevOps & Full-Stack Developer",
   description:
-    "Portfolio of Balamurugan S — Software Engineer. 3D web experiences with Next.js and React Three Fiber.",
+    "Portfolio of Balamurugan S — DevOps Intern & MERN Stack Developer. B.E. ECE Student at Sri Eshwar College of Engineering.",
   authors: [{ name: "Balamurugan S" }],
   openGraph: {
-    title: "Balamurugan S — Software Engineer",
+    title: "Balamurugan S — DevOps & Full-Stack Developer",
     description:
-      "Interactive 3D portfolio. Next.js, React Three Fiber, GLSL.",
+      "Interactive 3D portfolio of Balamurugan S — DevOps & MERN Stack Developer.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Balamurugan S — Software Engineer",
+    title: "Balamurugan S — DevOps & Full-Stack Developer",
     description:
-      "Interactive 3D portfolio. Next.js, React Three Fiber, GLSL.",
+      "Interactive 3D portfolio of Balamurugan S — DevOps & MERN Stack Developer.",
   },
 };
 

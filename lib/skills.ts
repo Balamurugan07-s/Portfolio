@@ -1,19 +1,19 @@
 import {
   siC,
-  siCplusplus,
   siPython,
-  siTypescript,
   siJavascript,
   siHtml5,
   siCss,
-  siBootstrap,
   siReact,
+  siFastapi,
   siSpringboot,
   siNodedotjs,
+  siExpress,
   siMysql,
+  siPostgresql,
   siMongodb,
-  siGit,
-  siGithub
+  siDocker,
+  siKubernetes,
 } from "simple-icons";
 
 export type SkillIcon = {
@@ -26,31 +26,32 @@ export type SkillIcon = {
 
 const mapTagline = (icon: any, tagline: string): SkillIcon => ({
   ...icon,
-  tagline
+  tagline,
 });
 
 export const SKILLS_GRID: readonly (readonly SkillIcon[])[] = [
   [
-    mapTagline(siC, "The mother of all languages."),
-    mapTagline(siCplusplus, "Object-oriented powerhouse."),
+    mapTagline(siC, "Low-level performance & system memory."),
     mapTagline(siPython, "Reads like English, scales like a rocket."),
-    mapTagline(siTypescript, "JavaScript with superpowers."),
-    mapTagline(siJavascript, "The web's native language.")
-  ],
-  [
-    mapTagline(siHtml5, "The bones of any web page."),
+    mapTagline(siJavascript, "The web's native interactive language."),
+    mapTagline(siHtml5, "The foundational structure of the web."),
     mapTagline(siCss, "What separates good from beautiful."),
-    mapTagline(siBootstrap, "Responsive design made easy."),
-    mapTagline(siReact, "Components, components, components."),
-    mapTagline(siNodedotjs, "JavaScript on the server.")
   ],
   [
-    mapTagline(siSpringboot, "Enterprise Java made fast and simple."),
-    mapTagline(siMysql, "Classic relational data storage."),
-    mapTagline(siMongodb, "Flexible NoSQL document database."),
-    mapTagline(siGit, "History and time machine for code."),
-    mapTagline(siGithub, "Where the world builds software.")
+    mapTagline(siReact, "Modern component-driven UI library."),
+    mapTagline(siFastapi, "High-performance Python microservices & REST APIs."),
+    mapTagline(siSpringboot, "Enterprise Java made fast, robust & simple."),
+    mapTagline(siNodedotjs, "Server-side JavaScript runtime engine."),
+    mapTagline(siExpress, "Minimalist web framework for Node.js."),
+  ],
+  [
+    mapTagline(siMysql, "Classic relational database management system."),
+    mapTagline(siPostgresql, "Advanced open-source relational database."),
+    mapTagline(siMongodb, "Flexible document-based NoSQL store."),
+    mapTagline(siDocker, "Standard for software containerization."),
+    mapTagline(siKubernetes, "Production-grade container orchestration."),
   ],
 ] as const;
 
 export const SKILLS_FLAT: readonly SkillIcon[] = SKILLS_GRID.flat();
+

@@ -17,8 +17,6 @@ export default function SectionNav() {
     { id: "experience", label: "Experience" },
     { id: "project1", label: "Project 01" },
     { id: "project2", label: "Project 02" },
-    { id: "project3", label: "Project 03" },
-    { id: "project4", label: "Project 04" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -30,8 +28,6 @@ export default function SectionNav() {
       "experience",
       "project1",
       "project2",
-      "project3",
-      "project4",
       "contact",
     ];
     const els = ids.map((id) =>

@@ -13,54 +13,58 @@ import ProjectModal, {
 import { useIsMobile } from "@/lib/useIsMobile";
 import { SKILLS_FLAT } from "@/lib/skills";
 
-const EMAIL = "balamurugansubramaniyam333@gmail.com";
+const EMAIL = "balamurugan.s2024ece@sece.ac.in";
 
 type Project = ProjectDetail & {
   align: "left" | "right";
-  section: "project1" | "project2" | "project3" | "project4";
+  section: "project1" | "project2";
 };
 
 const projects: Project[] = [
   {
     num: "01",
-    name: "NoteStack",
+    name: "NEOGUARD",
+    badge: "March 2026",
     stack: [
-      "Java",
-      "Spring Boot",
-      "Spring MVC",
-      "Spring Data JPA",
-      "MySQL",
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "JavaScript",
-      "Thymeleaf",
-      "Maven",
+      "Python",
+      "FastAPI",
+      "React.js",
+      "ESP32",
+      "MAX30102",
+      "DHT11",
+      "Chronos-Bolt AI",
+      "WebSocket",
+      "Telegram API",
     ],
-    desc: "Student Notes Sharing Platform that enables students to upload, organize, and share academic notes efficiently.",
-    details: "Implemented secure user authentication, note management, and categorized content access. Built a centralized platform to improve collaboration and simplify access to study materials.",
+    desc: "AI-powered NICU monitoring system with a five-stage anomaly detection pipeline, real-time dashboard, and gestational age-adaptive clinical rules to reduce false alarms and improve patient safety.",
+    details: "Built an AI-powered NICU monitoring system featuring a five-stage anomaly detection pipeline, real-time telemetry dashboard, and gestational age-adaptive clinical rules designed to reduce false alarms and improve patient safety.\n\nKey Highlights:\n- Hardware integration with ESP32, MAX30102 pulse oximetry, and DHT11 sensors for vital sign acquisition.\n- High-performance FastAPI backend using WebSockets for live data streaming and instant clinical notifications via Telegram API.\n- Integrated Chronos-Bolt AI model for multi-parameter anomaly prediction in neonatal intensive care.",
     github: "https://github.com/balamurugan-s",
     media: [],
-    highlights: ["java", "spring", "mysql", "javascript", "html5", "css"],
+    highlights: ["python", "fastapi", "react"],
     align: "left",
     section: "project1",
   },
   {
     num: "02",
-    name: "School Management System",
+    name: "NOTESTACK",
+    badge: "April 2026",
     stack: [
-      "Python",
-      "Django",
-      "HTML",
-      "CSS",
-      "Bootstrap",
+      "Java",
+      "Spring Boot",
+      "React.js",
       "MySQL",
+      "Bootstrap",
+      "JavaScript",
+      "Thymeleaf",
+      "Maven",
+      "Git",
+      "GitHub",
     ],
-    desc: "Developed a School Management System to streamline the management of students, teachers, attendance, and academic records.",
-    details: "Implemented secure user authentication and role-based access for efficient administration. Built a centralized platform to simplify school operations and improve data management.",
-    github: "https://github.com/Balamurugan07-s",
+    desc: "Student Notes Sharing Platform that enables students to upload, organize, and share academic notes efficiently.",
+    details: "Developed NoteStack, a Student Notes Sharing Platform that enables students to upload, organize, and share academic notes efficiently.\n\nKey Highlights:\n- Implemented secure user authentication, note management, and categorized content access control.\n- Built a centralized platform to improve collaboration and simplify access to study materials across departments.\n- Full-stack integration using Java, Spring Boot, MySQL, Thymeleaf, and React.js frontend components.",
+    github: "https://github.com/balamurugan-s",
     media: [],
-    highlights: ["python", "django", "mysql", "html5", "css"],
+    highlights: ["springboot", "react", "mysql"],
     align: "right",
     section: "project2",
   },
@@ -70,24 +74,24 @@ const education = [
   {
     degree: "B.E. Electronics and Communication Engineering",
     school: "Sri Eshwar College of Engineering",
-    period: "2022 - 2026",
+    period: "2024 - 2028",
     location: "Coimbatore",
-    score: "CGPA: 8.12",
+    score: "CGPA: 8.44 (IVth-sem)",
   },
   {
     degree: "Higher Secondary (Class XII)",
-    school: "Board of Higher Secondary Education",
+    school: "Swami Vivekananda Matric Higher Secondary School",
     period: "2023 - 2024",
     location: "Tamil Nadu",
     score: "92.5%",
   },
   {
     degree: "SSLC (Class X)",
-    school: "Board of Secondary Education",
+    school: "Swami Vivekananda Matric Higher Secondary School",
     period: "2021 - 2022",
     location: "Tamil Nadu",
     score: "91.6%",
-  }
+  },
 ];
 
 const experiences: Array<{
@@ -100,29 +104,45 @@ const experiences: Array<{
   stack: string[];
 }> = [
   {
-    role: "MERN Stack Intern",
-    company: "Internship",
-    period: "2025",
-    location: "Remote",
-    summary: "Worked on full-stack web development using the MERN stack to build dynamic and scalable web applications.",
+    role: "DevOps Intern",
+    company: "VSphere Technologies",
+    period: "2026",
+    location: "Bengaluru",
+    summary: "Worked on containerization, CI/CD automation, Kubernetes deployments, and GitOps using Argo CD to streamline infrastructure and improve deployment reliability.",
     bullets: [
-      "Developed responsive user interfaces and created RESTful APIs.",
-      "Managed database operations and implemented end-to-end application functionality.",
-      "Gained hands-on experience in frontend and backend integration, authentication, and deployment of modern web solutions."
+      "Implemented containerization and automated CI/CD pipelines to streamline application workflows.",
+      "Managed Kubernetes deployments and established GitOps practices with Argo CD for reliable infrastructure delivery."
     ],
-    stack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    stack: ["Docker", "Kubernetes", "Git", "GitLab CI/CD", "Argo CD", "Linux", "YAML"],
+  },
+  {
+    role: "MERN Stack Intern",
+    company: "Sri Eshwar College of Engineering",
+    period: "2025",
+    location: "Coimbatore",
+    summary: "Worked on full-stack web application development using the MERN stack. Built responsive user interfaces with React, developed RESTful APIs using Node.js and Express.js, managed MongoDB databases, and integrated components for end-to-end web solutions.",
+    bullets: [
+      "Developed responsive user interfaces with React.js and created RESTful APIs with Node.js & Express.js.",
+      "Managed MongoDB and MySQL databases while integrating end-to-end frontend and backend web solutions."
+    ],
+    stack: ["React.js", "Node.js", "Express.js", "MongoDB", "Spring Boot", "REST APIs"],
   },
 ];
 
 const achievements = [
   {
+    title: "Runner Up – Mini Project Expo 2026",
+    desc: "Sri Eshwar College of Engineering (SECE)",
+    year: "2026"
+  },
+  {
     title: "Participant – QUBITRON 2K25",
-    desc: "Coimbatore Institute of Technology",
+    desc: "Coimbatore Institute of Technology (CIT)",
     year: "2025"
   },
   {
-    title: "Winner – Freshwarites Prelims",
-    desc: "ECE Department",
+    title: "Winner – Freshwarites Prelims of ECE Dept",
+    desc: "Sri Eshwar College of Engineering (SECE)",
     year: "2024"
   }
 ];
@@ -130,18 +150,74 @@ const achievements = [
 const profiles = [
   {
     name: "LeetCode",
-    stats: "Solved 170+ problems | Rank: 8,64,548",
+    stats: "Max Rating: 1,483 | Global Rank: 844,885 | Solved: 243",
     url: "https://leetcode.com/balamurugan_s"
   },
   {
     name: "HackerRank",
-    stats: "2 Star Python, 2 Star Java, 1 Star SQL",
+    stats: "2 Star Python | 2 Star Java | 1 Star SQL",
     url: "https://hackerrank.com/"
   },
   {
+    name: "CodeChef",
+    stats: "70+ Problems Solved",
+    url: "https://www.codechef.com/"
+  },
+  {
     name: "SkillRack",
-    stats: "Solved 900+ problems | 240+ Bronzes | Rank: 23,728",
+    stats: "Global Rank: 28,495 | Solved: 958 Problems",
     url: "https://skillrack.com/"
+  }
+];
+
+const certifications = [
+  {
+    title: "Introduction to Modern AI",
+    issuer: "Cisco",
+    year: "2026"
+  },
+  {
+    title: "Java-Foundation",
+    issuer: "Oracle",
+    year: "2026"
+  },
+  {
+    title: "NPTEL - Design Thinking",
+    issuer: "NPTEL",
+    year: "2026"
+  },
+  {
+    title: "Java",
+    issuer: "SoloLearn",
+    year: "2025"
+  },
+  {
+    title: "SQL (Intermediate)",
+    issuer: "HackerRank",
+    year: "2025"
+  }
+];
+
+const technicalSkillsCategories = [
+  {
+    category: "Languages",
+    skills: ["C", "Java", "Python", "JavaScript", "SQL", "HTML", "CSS"]
+  },
+  {
+    category: "Technologies & Frameworks",
+    skills: ["React.js", "FastAPI", "Spring Boot", "Node.js", "Express.js", "Django"]
+  },
+  {
+    category: "Database",
+    skills: ["MySQL", "PostgreSQL", "MongoDB"]
+  },
+  {
+    category: "DevOps & Tools",
+    skills: ["Git", "GitHub", "Docker", "Kubernetes", "Argo CD", "Postman", "VS Code", "Arduino IDE"]
+  },
+  {
+    category: "Core Concepts",
+    skills: ["DSA", "OOPS", "DBMS", "REST APIs"]
   }
 ];
 
@@ -189,14 +265,14 @@ export default function Home() {
               Balamurugan S
             </span>
             <span className="hidden md:inline-flex">
-              <span className="status-pill">Available for tech roles</span>
+              <span className="status-pill">DevOps & MERN Stack Developer</span>
             </span>
           </div>
           <div className="flex items-center gap-2 pointer-events-auto">
             <SeasonPicker />
             <span className="hidden md:inline-flex">
             <a
-              href="https://github.com/Balamurugan07-s"
+              href="https://github.com/balamurugan-s"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="hover"
@@ -244,7 +320,7 @@ export default function Home() {
                 >
                   B.E ECE Student @ Sri Eshwar College of Engineering
                   <br />
-                  Full-Stack Developer, Competitive Programmer & Problem Solver.
+                  DevOps Intern & MERN Stack Developer · Competitive Programmer.
                 </p>
 
                 {/* CTAs */}
@@ -296,7 +372,7 @@ export default function Home() {
                     </svg>
                   </a>
                   <a
-                    href="https://github.com/Balamurugan07-s"
+                    href="https://github.com/balamurugan-s"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-cursor="hover"
@@ -329,12 +405,12 @@ export default function Home() {
 
                   {/* Top Right Badge */}
                   <div className="absolute -top-4 -right-4 md:-top-5 md:-right-6 z-20 bg-[#0c162d]/90 backdrop-blur-xl border border-ice-500/10 text-[#00d2ff] text-xs font-mono px-4 py-2.5 rounded-xl shadow-lg flex items-center">
-                    MERN Stack
+                    DevOps & MERN
                   </div>
 
                   {/* Bottom Left Badge */}
                   <div className="absolute -bottom-4 -left-4 md:-bottom-5 md:-left-6 z-20 bg-[#0c162d]/90 backdrop-blur-xl border border-ice-500/10 text-xs px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-1.5">
-                    <span className="text-[#00d2ff] font-bold text-sm">8.12</span> <span className="text-ice-400">CGPA</span>
+                    <span className="text-[#00d2ff] font-bold text-sm">8.44</span> <span className="text-ice-400">CGPA</span>
                   </div>
                 </div>
               </div>
@@ -356,10 +432,10 @@ export default function Home() {
 
           <section
             data-kb-section="stack"
-            className="relative md:min-h-[200vh] p-6 sm:p-10 md:p-14"
+            className="relative p-6 sm:p-10 md:p-14 pb-20"
           >
-            <div className="relative md:h-[150vh]">
-              <div className="md:sticky md:top-28 text-center">
+            <div className="relative">
+              <div className="text-center mb-12">
                 <Reveal>
                   <h2 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-[-0.03em] text-ice-50 leading-[0.95]">
                     Tech Stack
@@ -368,13 +444,29 @@ export default function Home() {
                 <Reveal delay={120}>
                   <p className="mt-3 text-sm sm:text-base text-ice-400">
                     <span className="hidden md:inline">(hint: hover over a key)</span>
-                    <span className="md:hidden">The tools I build with.</span>
+                    <span className="md:hidden">Languages, frameworks, databases & tools I build with.</span>
                   </p>
                 </Reveal>
               </div>
 
+              {/* Technical Skills Breakdown */}
+              <div className="relative z-10 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pointer-events-auto mb-10">
+                {technicalSkillsCategories.map((cat, idx) => (
+                  <Reveal key={cat.category} delay={idx * 80} className="rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 shadow-[0_8px_40px_-20px_rgba(0,0,0,0.6)]">
+                    <h3 className="text-xs font-mono text-[#00d2ff] uppercase tracking-widest mb-4 font-semibold">{cat.category}</h3>
+                    <div className="flex flex-wrap gap-2">
+                      {cat.skills.map((s) => (
+                        <span key={s} data-cursor="hover" className="frost-chip text-xs py-1 px-3">
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+
               {isMobile && (
-                <div className="md:hidden mt-10 grid grid-cols-1 sm:grid-cols-2 gap-3 pointer-events-auto">
+                <div className="md:hidden mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 pointer-events-auto">
                   {SKILLS_FLAT.map((s) => (
                     <div
                       key={s.slug}
@@ -532,9 +624,12 @@ export default function Home() {
               ))}
             </div>
             
-            <div className="relative z-10 max-w-3xl mx-auto space-y-6 mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Reveal as="div" className="md:col-span-1 rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 shadow-[0_8px_40px_-20px_rgba(0,0,0,0.6)] pointer-events-auto">
-                <h3 className="text-xl font-bold text-ice-50 tracking-tight mb-4 border-b border-ink-3 pb-2">Achievements</h3>
+            <div className="relative z-10 max-w-5xl mx-auto space-y-6 mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Reveal as="div" className="rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 shadow-[0_8px_40px_-20px_rgba(0,0,0,0.6)] pointer-events-auto">
+                <h3 className="text-xl font-bold text-ice-50 tracking-tight mb-4 border-b border-ink-3 pb-2 flex items-center justify-between">
+                  <span>Achievements</span>
+                  <span className="text-[#00d2ff] text-xs font-mono">🏆</span>
+                </h3>
                 <ul className="space-y-4">
                   {achievements.map((a, i) => (
                     <li key={i} className="text-ice-200 text-sm">
@@ -544,13 +639,32 @@ export default function Home() {
                   ))}
                 </ul>
               </Reveal>
-              <Reveal as="div" className="md:col-span-1 rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 shadow-[0_8px_40px_-20px_rgba(0,0,0,0.6)] pointer-events-auto">
-                 <h3 className="text-xl font-bold text-ice-50 tracking-tight mb-4 border-b border-ink-3 pb-2">Coding Profiles</h3>
+
+              <Reveal as="div" className="rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 shadow-[0_8px_40px_-20px_rgba(0,0,0,0.6)] pointer-events-auto">
+                 <h3 className="text-xl font-bold text-ice-50 tracking-tight mb-4 border-b border-ink-3 pb-2 flex items-center justify-between">
+                  <span>Coding Profiles</span>
+                  <span className="text-[#00d2ff] text-xs font-mono">💻</span>
+                </h3>
                 <ul className="space-y-4">
                   {profiles.map((p, i) => (
                     <li key={i} className="text-ice-200 text-sm">
-                      <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-ice-100 font-bold hover:text-ice-300 transition-colors block">{p.name}</a>
+                      <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-ice-100 font-bold hover:text-[#00d2ff] transition-colors block">{p.name}</a>
                       <span className="text-ice-400 block mt-1">{p.stats}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+
+              <Reveal as="div" className="rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 shadow-[0_8px_40px_-20px_rgba(0,0,0,0.6)] pointer-events-auto">
+                <h3 className="text-xl font-bold text-ice-50 tracking-tight mb-4 border-b border-ink-3 pb-2 flex items-center justify-between">
+                  <span>Certifications</span>
+                  <span className="text-[#00d2ff] text-xs font-mono">📜</span>
+                </h3>
+                <ul className="space-y-4">
+                  {certifications.map((c, i) => (
+                    <li key={i} className="text-ice-200 text-sm">
+                      <strong className="text-ice-100 block">{c.title}</strong>
+                      <span className="text-ice-400">{c.issuer} — {c.year}</span>
                     </li>
                   ))}
                 </ul>
